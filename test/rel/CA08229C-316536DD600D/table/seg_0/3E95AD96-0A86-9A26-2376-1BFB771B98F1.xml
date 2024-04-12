@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E95AD96-0A86-9A26-2376-1BFB771B98F1" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="BUS">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BUS</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>6B71618E-5EFE-BADB-E37B-590BB92D92CA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BNO" id="3CAAB547-35AD-6328-C4A1-AF3532B3A23E">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>BUS</sourceObjSchema>
+<sourceObjName>BNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>54839EDF-D93D-6ABF-70A0-4B3A946A8E2F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BTYPE" id="FA3C9A61-0310-D3E5-F7DC-2153E3A649A5">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>BUS</sourceObjSchema>
+<sourceObjName>BTYPE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>3D7BA1D5-4CE6-CD3A-0D7E-402FFEDB183B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROUTE" id="E9612570-20C8-A5EB-CEFC-27666C0ED301">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>BUS</sourceObjSchema>
+<sourceObjName>ROUTE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>11959CFE-39BE-2A50-7932-E1B19CA03F42</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC1DB6B3-740C-CF30-1C6B-C0CF744A0F98" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="BUS_PK">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008472</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>E89DD473-0DB0-ECF1-748E-A7532BE53467</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CAAB547-35AD-6328-C4A1-AF3532B3A23E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

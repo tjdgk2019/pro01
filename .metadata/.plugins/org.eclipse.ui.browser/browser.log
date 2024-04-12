@@ -1,0 +1,18 @@
+
+4월 04, 2024 09:02:50.07 NEW SESSION
+4월 04, 2024 09:02:50.07 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 04, 2024 10:05:57.89 [4068:9708:0404/100557.897:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 11:26:54.70 [4068:9708:0404/112654.708:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 11:48:02.23 [4068:9708:0404/114802.236:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 16:10:33.52 [4068:9708:0404/161033.529:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 16:16:52.16 [4068:9708:0404/161652.161:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 16:47:40.20 [4068:9708:0404/164740.208:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 17:03:54.98 [4068:9708:0404/170354.989:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 18:17:22.06 [4068:9708:0404/181722.069:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 18:25:23.82 [4068:9708:0404/182523.825:ERROR:interface_endpoint_client.cc(707)] Message 3 rejected by interface blink.mojom.Widget
+4월 04, 2024 18:29:19.13 [4068:9708:0404/182919.133:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 18:29:19.31 [4068:9708:0404/182919.310:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 18:33:42.67 [4068:9708:0404/183342.670:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 19:19:28.76 [4068:9708:0404/191928.768:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 04, 2024 19:20:10.37 WARNING: Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#56 is a dynamic-sized tensor).
+4월 04, 2024 19:34:24.53 [4068:9708:0404/193424.533:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost

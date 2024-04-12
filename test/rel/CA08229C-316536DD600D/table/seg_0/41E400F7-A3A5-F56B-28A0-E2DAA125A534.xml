@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41E400F7-A3A5-F56B-28A0-E2DAA125A534" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="GUIDE">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>GUIDE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PCODE" id="2DE3158C-5500-189C-31E2-91D9F1CCD779">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PCODE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNAME" id="BA1A3FD8-84A1-025A-449A-7A131FD6D274">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PNAME</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PTYPE" id="592634ED-6B08-96C6-D999-68EBD838C25F">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PTYPE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PADDR" id="35CA9332-392F-6A4B-8E56-028305D9E9BA">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PADDR</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PTEL" id="31977C32-A786-8F49-4537-3B541DE548AE">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PTEL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCOMENT" id="731DC7D1-2A2E-EA2E-D4CD-8F49632EA82C">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PCOMENT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREMARK" id="F0057299-F3F5-F051-6F66-99603A732EB6">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>GUIDE</sourceObjSchema>
+<sourceObjName>PREMARK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E134AE5-BB48-3B6E-7154-6F812B307CE7" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="GUIDE_PK">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008387</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 03:33:47 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DE3158C-5500-189C-31E2-91D9F1CCD779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

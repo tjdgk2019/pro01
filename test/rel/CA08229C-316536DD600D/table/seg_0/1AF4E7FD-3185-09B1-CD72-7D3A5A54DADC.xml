@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1AF4E7FD-3185-09B1-CD72-7D3A5A54DADC" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="SUBWAY">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SUBWAY</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>C149FDF7-6833-3EDA-3308-D83BDB70E4EC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TNO" id="202A44A9-C4DC-2169-B6C7-44008496891F">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SUBWAY</sourceObjSchema>
+<sourceObjName>TNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>1CA05B0A-0A31-D46D-958D-88E4C0797BB6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTYPE" id="F872C9C5-FE9C-8992-A912-0534794D5CE5">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SUBWAY</sourceObjSchema>
+<sourceObjName>TTYPE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>6FD4C6A0-9CA4-91BA-6A8A-C9C29F21088C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROUTE" id="099B5D21-DD6F-DEAD-0ED4-AF273195F8B0">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SUBWAY</sourceObjSchema>
+<sourceObjName>ROUTE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>EC62A6CA-A417-E282-E139-9EB73A8AC46B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLOR" id="3167ACE2-E055-B234-DB1C-5FDDDAB45CA4">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SUBWAY</sourceObjSchema>
+<sourceObjName>COLOR</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>481F0309-2195-C0DC-7632-856E63CA59A1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C31EB345-F056-46C6-6ECA-2C1C5FFED589" schemaObject="4E7B497C-BFEF-9345-EEDE-2D8AA448A694" name="SUBWAY_PK">
+<sourceConnName>test01</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008467</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<importedID>CB4FB977-491B-3E5F-DAA0-58DB07F783E0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="202A44A9-C4DC-2169-B6C7-44008496891F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

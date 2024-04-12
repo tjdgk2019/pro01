@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="BUS" directorySegmentName="seg_0" id="3E95AD96-0A86-9A26-2376-1BFB771B98F1">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<schemaObject>4E7B497C-BFEF-9345-EEDE-2D8AA448A694</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5281856C-1EA0-DB85-5CD9-B005A973EECC</segment>
+<tableSpace>A89A48B9-AAE1-46A0-19E1-974AE74E4287</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BNO" id="3CAAB547-35AD-6328-C4A1-AF3532B3A23E">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROUTE" id="E9612570-20C8-A5EB-CEFC-27666C0ED301">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BTYPE" id="FA3C9A61-0310-D3E5-F7DC-2153E3A649A5">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BUS_PK" id="BC1DB6B3-740C-CF30-1C6B-C0CF744A0F98">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<schemaObject>4E7B497C-BFEF-9345-EEDE-2D8AA448A694</schemaObject>
+<segment>52FF3CAE-4A1A-FEB6-5EEE-97E9E058686F</segment>
+<tableSpace>A89A48B9-AAE1-46A0-19E1-974AE74E4287</tableSpace>
+<indexSegment>52FF3CAE-4A1A-FEB6-5EEE-97E9E058686F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

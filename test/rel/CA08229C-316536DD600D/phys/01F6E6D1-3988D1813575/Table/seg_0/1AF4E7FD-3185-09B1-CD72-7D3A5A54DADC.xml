@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SUBWAY" directorySegmentName="seg_0" id="1AF4E7FD-3185-09B1-CD72-7D3A5A54DADC">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<schemaObject>4E7B497C-BFEF-9345-EEDE-2D8AA448A694</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5281856C-1EA0-DB85-5CD9-B005A973EECC</segment>
+<tableSpace>A89A48B9-AAE1-46A0-19E1-974AE74E4287</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROUTE" id="099B5D21-DD6F-DEAD-0ED4-AF273195F8B0">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TNO" id="202A44A9-C4DC-2169-B6C7-44008496891F">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLOR" id="3167ACE2-E055-B234-DB1C-5FDDDAB45CA4">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TTYPE" id="F872C9C5-FE9C-8992-A912-0534794D5CE5">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUBWAY_PK" id="C31EB345-F056-46C6-6ECA-2C1C5FFED589">
+<createdBy>user1</createdBy>
+<createdTime>2024-04-02 07:37:39 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<schemaObject>4E7B497C-BFEF-9345-EEDE-2D8AA448A694</schemaObject>
+<segment>52FF3CAE-4A1A-FEB6-5EEE-97E9E058686F</segment>
+<tableSpace>A89A48B9-AAE1-46A0-19E1-974AE74E4287</tableSpace>
+<indexSegment>52FF3CAE-4A1A-FEB6-5EEE-97E9E058686F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

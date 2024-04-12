@@ -1,0 +1,68 @@
+package org.wangsimni.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.wangsimni.dto.Member;
+import org.wangsimni.dto.Notice;
+
+public class MemberDAO {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	public List<Member> getMemList(){
+		List<Member> memList =new ArrayList<>();
+		OracleDB oracle = new OracleDB();
+		try {
+			con = oracle.connect();
+			pstmt = con.prepareStatement(SqlLang.SELECT_ALL_NOTICE);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Member mem = new Member(rs.getString("id"),
+						rs.getString("pw"),
+						rs.getString("name"),
+						rs.getString("email"),
+						rs.getInt("tel"));
+				memList.add(mem);
+			}
+		} catch(Exception e){
+			e.printStackTrace();
+		} finally {
+			oracle.close(con, pstmt, rs);
+		}
+		return memList;
+	
+		public Member getMemList() {
+			Member mem = Member();
+			OracleDB oracle = new OracleDB();
+			
+			try {
+				con = oracle.connect();
+				pstmt = con.prepareStatement(SqlLang.VISITED_UPD_NOTICE);
+				pstmt.setInt(1, no);
+				pstmt.executeUpdate();
+				pstmt = null;
+				pstmt = con.prepareStatement(SqlLang.SELECT_NOTICE_BYNO);
+				pstmt.setInt(1, no);
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					mem.setId(rs.getString("id"));
+					mem.setPw(rs.getString("pw"));
+					mem.setName(rs.getString("name");
+					noti.setResdate(rs.getString("resdate"));
+					noti.setVisited(rs.getInt("visited"));
+				}
+			} catch(Exception e) {
+				e.printStackTrace();
+			} finally {
+				oracle.close(con, pstmt, rs);
+			}
+			return noti;
+		}	
+		
+	}
+}
