@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<ul class="bu dl">
+	<li class="block"><span class="title">1945년 광복직후</span>
+		<ul class="bu">
+			<li>도선동지역 : 하왕십리 동부동회</li>
+			<li>홍익동지역 : 하왕십리 중앙동회</li>
+		</ul>
+	</li>
+	<li class="block"><span class="title">1955. 4.18</span>
+		<ul class="bu">
+			<li>도선동지역 : 하왕십리1동사무소</li>
+			<li>홍익동지역 : 하왕십리2동사무소</li>
+		</ul>
+	</li>
+	<li class="block"><span class="title">1959.10.31</span>
+		<ul class="bu">
+			<li>하왕십리제1동사무소 : 도선동사무소</li>
+			<li>하왕십리제2동사무소 : 홍익동사무소</li>
+		</ul>
+	</li>
+	<li><span class="title">1970. 5.18</span><span class="text">홍익동사무소를 폐지하고 도선동?홍익동 지역을 합하여 도선동사무소로 현재에 이르고 있음.</span></li>
+	<li><span class="title">2008. 8.11</span><span class="text">왕십리제1동사무소를 폐지하고 왕십리제1동?도선동?홍익 동을 합하여 왕십리도선동 주민센터로 변경되었음. </span></li>
+</ul>
+</body>
+</html>

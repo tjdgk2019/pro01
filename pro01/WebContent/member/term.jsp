@@ -10,28 +10,35 @@
 <title>${title }</title>
 <%@ include file="/head.jsp" %>
 <style>
-	.container{width:1400px}
-	.page{clear:both; height:150vh;}
-	.page_title{text-align: center; font-size:34px; padding-top:2em; padding-bottom:0.5em;}
-	.title{text-align: center; font-size:28px; padding-top:2em; padding-bottom:1em;}
-	.form-check{padding-top:2.5em; padding-bottom:2em;}
-	.btn-group{padding-top:0.5em; padding-bottom:2em;}
-	#footer{clear:both; height:25vh; padding-top:2em; background-color:#000000;}
+	.container { width:1400px}
+	.page { clear:both; height:128vh;}
+	.page_title { text-align: center; font-size:34px; padding-top:2em; padding-bottom:0.5em;}
+	.title { text-align: center; font-size:28px; padding-top:2em; padding-bottom:1em;}
+	.form-check {padding-top:2.5em; padding-bottom:2em;}
+	.btn-group {text-align: center; padding-top:0.5em; padding-bottom:2em;}
 </style>
 </head>
 <body>
 <div id="header">
 	<%@ include file="/header.jsp" %>
 </div>
+
 <div id="contents">
 	<section class="page" id="page1">
-		<c:if test="${not empty msg }">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="/pro01">Home</a></li>
+		    <li class="breadcrumb-item"><a href="${hpath }/member/term.jsp">회원</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">회원가입</li>
+		  </ol>
+		</nav>
+		<c:if test="${not empty msg}">
 		<div style="width:1400px; margin:0 auto;">${msg }</div>
 		</c:if>
-		<div style="width:1400px; margin:0 auto; text-align: center;">
-		<h3 class="page_title">회원 약관 동의</h3>
-		<h4 class="title">이용약관</h4>
-		<textarea class="form-control" rows="12" readonly>
+		<div style="width:1400px; margin:0 auto;">
+			<h3 class="page_title">회원약관 동의</h3>
+			<textarea class="form-control" rows="10" disabled>
+		
 		제 1 장 총칙
 
 		제 1 조 (목적) 이 이용약관은 “단체표준종합정보센터 (이하 "당 사이트")”에서 제공하는 인터넷 서비스(이하 '서비스')의 가입조건,
@@ -241,8 +248,31 @@
 			  <button type="button" onclick="term_check()" class="btn btn-outline-secondary">다음 단계</button>
 			</div>
 		</div>
-		</div>
-	</section>
+		<script>
+		var ck_item1 = document.getElementById("ck_item1");
+		var ck_item2 = document.getElementById("ck_item2");
+		var sw = 1;
+		function all_check(){
+			if(sw==1){
+				ck_item1.checked = true;
+				ck_item2.checked = true;
+				sw = 0;
+			} else {
+				ck_item1.checked = false;
+				ck_item2.checked = false;
+				sw = 1;
+			}
+		}
+		function term_check(){
+			if(ck_item1.checked && ck_item2.checked){
+				location.href = "${path0 }/Join.do";
+			} else {
+				alert("회원 약관 및 개인정보처리 방침에 동의하지 않으셨습니다.");
+				return;
+			}
+		}
+		</script>
+	</section>	
 </div>
 <div id="footer">
 	<%@ include file="/footer.jsp" %>

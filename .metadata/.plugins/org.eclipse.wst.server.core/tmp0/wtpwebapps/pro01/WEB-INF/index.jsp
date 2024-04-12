@@ -16,7 +16,6 @@
 	.page2 {clear:both; height:100vh; text-align: center;}
 	.page3 {clear:both; height:100vh;}
 	.page4 {clear:both; height:100vh;}
-	#footer{clear:both; height:25vh; padding-top:2em; background-color:#000000;}
 </style>
 </head>
 <body>

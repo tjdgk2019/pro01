@@ -14,7 +14,6 @@
 	.page{clear:both; height:100vh;}
 	.table{margin:0 auto; text-align: left;}
 	.page_title{text-align: center; font-size:34px; padding-top:2em; padding-bottom:1.5em;}
-	#footer{clear:both; height:25vh; padding-top:2em; background-color:#000000;}
 </style>
 </head>
 <body>
@@ -53,7 +52,7 @@
 		<hr>
 		<div class="btn-group">
 			<button type="submit" class="btn btn-outline-primary">로그인</button>
-			<button type="reset" class="btn btn-outline-dark">취소</button>
+			<a href="/pro01" class="btn btn-outline-dark">취소</a>
 		</div>
 	</form>
 </div>

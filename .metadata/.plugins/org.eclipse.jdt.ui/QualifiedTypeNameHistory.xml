@@ -11,14 +11,14 @@
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="org.wangsimni.dao.NoticeDAO"/>
     <fullyQualifiedTypeName name="org.wangsimni.dto.Notice"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Member"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="org.wangsimni.dto.Member"/>
-    <fullyQualifiedTypeName name="org.wangsimni.dao.MemberDAO"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="org.wangsimni.dao.MemberDAO"/>
+    <fullyQualifiedTypeName name="org.wangsimni.dto.Member"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

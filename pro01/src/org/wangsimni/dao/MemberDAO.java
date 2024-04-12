@@ -14,8 +14,8 @@ public class MemberDAO {
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	
-	public List<Member> getMemList(){
-		List<Member> memList =new ArrayList<>();
+	public List<Member> getMemberList(){
+		List<Member> memList = new ArrayList<>();
 		OracleDB oracle = new OracleDB();
 		try {
 			con = oracle.connect();
@@ -34,13 +34,12 @@ public class MemberDAO {
 		} finally {
 			oracle.close(con, pstmt, rs);
 		}
-		return memList;	
+		return memList;
 	}
 	
 	public Member getMember(String id) {
 		Member mem = new Member();
 		OracleDB oracle = new OracleDB();
-		
 		try {
 			con = oracle.connect();
 			pstmt = con.prepareStatement(SqlLang.SELECT_ONE_MEMBER);
@@ -101,7 +100,7 @@ public class MemberDAO {
 		return cnt;
 	}
 	
-	public int memberOut(String id){
+	public int memberOut(String id) {
 		int cnt = 0;
 		OracleDB oracle = new OracleDB();
 		try {
@@ -122,20 +121,19 @@ public class MemberDAO {
 		OracleDB oracle = new OracleDB();
 		try {
 			con = oracle.connect();
-			pstmt = con.prepareStatement(SqlLang.DEL_MEMBER);
+			pstmt = con.prepareStatement(SqlLang.SELECT_ONE_MEMBER);
 			pstmt.setString(1, id);
-			rs= pstmt.executeQuery();
+			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				ck = true;
 			} else {
 				ck = false;
 			}
-		} catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 		} finally {
 			oracle.close(con, pstmt, rs);
 		}
 		return ck;
 	}
-	
 }

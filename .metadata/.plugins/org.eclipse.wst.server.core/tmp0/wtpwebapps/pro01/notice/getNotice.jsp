@@ -16,7 +16,6 @@
 	.title {text-align: center; font-size:40px; padding-top:2em;}
 	.page_title{text-align: center; font-size:34px; padding-top:2em; padding-bottom:1.5em;}
 	#page2{background-color:#f8f8f8;}
-	#footer{clear:both; height:25vh; padding-top:2em; background-color:#000000;}
 </style>
 </head>
 <body>
@@ -25,6 +24,13 @@
 </div>
 <div id="contents">
 <section class="page" id="page1">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		   <li class="breadcrumb-item"><a href="/pro01">Home</a></li>
+		   <li class="breadcrumb-item"><a href="${hpath }/NotiList.do">커뮤니티</a></li>
+		   <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+		</ol>
+	</nav>
 	<div style="width:1400px; margin:0 auto;">
 		<h3 class="page_title">공지사항 상세보기</h3>
 		<div>

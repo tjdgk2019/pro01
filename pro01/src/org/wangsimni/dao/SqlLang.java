@@ -19,6 +19,13 @@ public interface SqlLang {
 	String UPD_MEMBER = "update member set pw=?, name=?, email=?, tel=? where id=?";
 	String DEL_MEMBER = "delete from member where id=?";
 	
+	String DEL_ANSWER = null;
+	String DEL_QUESTION = null;
+	String UPD_QNA = null;
+	String VISITED_UPD_QNA = null;
+	String SELECT_QNA_BYNO = null;
+	String SELECT_ALL_QNA = null;
+	
 	Connection con = null;
 	void close(Connection con, PreparedStatement pstmt);
 	void close(Connection con, PreparedStatement pstmt, ResultSet rs);

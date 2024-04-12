@@ -10,12 +10,11 @@
 <title>${title }</title>
 <%@ include file="/head.jsp" %>
 <style>
-.container { width:1400px; }
+.container { width:1200px; }
 .page { clear:both; height:100vh; }
-#page1 { background-color:#ececec; }
-#page2 { background-color:#42bcf5; }
+#page2 { background-color:#f8f8f8; }
 .page_title { font-size:36px; padding-top:2em; text-align:center; }
-#id { width:800px; float:left; margin-right:10px; }
+#id { width:300px; float:left; margin-right:10px; }
 </style>
 </head>
 <body>
@@ -24,11 +23,11 @@
 </div>
 <div id="contents">
 	<section class="page" id="page1">
-		<c:if test="${not empty msg}">
-		<div style="width:1400px; margin:0 auto; color:red; padding-top:32px; text-align:center">${msg }</div>
-		</c:if>
-		<div style="width:1400px; margin:0 auto;">
+		<div style="width:1200px; margin:0 auto;">
 			<h3 class="page_title"><i class="fas fa-user-plus fa-fw"></i> 회원가입</h3>
+			<c:if test="${not empty msg}">
+			<div style="width:1200px; margin:0 auto; color:red; padding-top:0.5em; padding-bottom:2.5em; text-align:center">${msg }</div>
+			</c:if>
 			<form action="${path0 }/JoinPro.do" method="post" onsubmit="return joinCheck(this)">
 				<table class="table">
 					<tbody>
@@ -36,7 +35,7 @@
 							<th><label for="id">아이디</label></th>
 							<td>
 								<input type="text" name="id" id="id" class="form-control" required>
-								<button type="button" onclick="id_check()" class="btn btn-secondary">아이디 중복검사</button>
+								<button type="button" onclick="id_check()" class="btn btn-dark">아이디 중복검사</button>
 								<input type="hidden" id="idCheck" name="idCheck" value="false">
 								<div id="msg1"></div>
 							</td>
@@ -62,7 +61,7 @@
 						<tr>
 							<th><label for="email">이메일 주소</label></th>
 							<td>
-								<input type="email" name="email" id="email" class="form-control" required>
+								<input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" required>
 							</td>
 						</tr>
 						<tr>
@@ -75,8 +74,8 @@
 				</table>
 				<hr>
 				<div class="btn-group">
-				  <button type="submit" class="btn btn-secondary">회원가입</button>
-				  <button type="reset" class="btn btn-secondary">취소</button>
+				  <button type="submit" class="btn btn-outline-primary">회원가입</button>
+				  <a href="${hpath }/member/login.jsp" class="btn btn-outline-dark">취소</a>
 				</div>
 			</form>
 			<script>
@@ -108,10 +107,10 @@
 						var idCk = data.result;
 						if(idCk==false){
 							$("#idCheck").val("true");
-							$("#msg1").html("<strong>사용 가능한 아이디입니다.</strong>");
+							$("#msg1").html("사용 가능한 아이디입니다.");
 						} else {
 							$("#idCheck").val("false");
-							$("#msg1").html("<strong style='color:red'>사용 불가능한 아이디입니다.</strong>");
+							$("#msg1").html("사용 불가능한 아이디입니다.");
 						}
 					}
 				});

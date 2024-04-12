@@ -4,10 +4,9 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
 <c:set var="hpath" value="<%=request.getContextPath() %>" />    
 <header>
-	<div class="logo_wrap" style="width:44px; height:44px; padding-top:3rem">
+	<div class="logo_wrap">
 		<a href="/pro01"><img src="${hpath }/images/logo.png" alt="왕십리 로고" /></a>
 	</div>
-	
 	<nav id="gnb">
 		<ul>
 			<li class="item">
@@ -25,26 +24,22 @@
 					<li><a href="${hpath }/AdminMain.do">관리자로</a></li>
 					</c:if>
 					<li><a href="${hpath }/member/terms.jsp">회원약관</a></li>
-					<li><a href="${hpath }/member/policy.jsp">개인정보처리방침</a></li>
+					<li><a href="${hpath }/member/policy.jsp">개인정보</a></li>
 				</ul>
 			</li>
 			<li class="item">
 				<a href="" class="dp1">지역소개</a>
 				<ul class="sub_menu">
-					<li><a href="${hpath }/intro/origin.jsp">지명유래</a></li>
-					<li><a href="${hpath }/intro/facility.jsp">지역 특징 및 시설안내</a></li>
-					<li><a href="${hpath }/intro/history.jsp">연혁</a></li>
-					<li><a href="${hpath }/intro/map.jsp">오시는 길</a></li>
+					<li><a href="${hpath }/intro/origin.jsp">지명유래 및 연혁</a></li>
+					<li><a href="${hpath }/intro/map.jsp">위치 안내</a></li>
 				</ul>
 			</li>
 			<li class="item">
 				<a href="" class="dp1">이용안내</a>
 				<ul class="sub_menu">
-					<li><a href="${hpath }/tour/traffic.jsp">교통편 안내</a></li>
-					<li><a href="${hpath }/tour/building.jsp">주요 빌딩</a></li>
-					<li><a href="${hpath }/tour/association.jsp">주요 협회 단체</a></li>
+					<li><a href="${hpath }/tour/traffic.jsp">교통 안내</a></li>
+					<li><a href="${hpath }/tour/building.jsp">시설 안내</a></li>
 					<li><a href="${hpath }/tour/rest.jsp">맛집 안내</a></li>
-					<li><a href="${hpath }/tour/lodg.jsp">숙박 시설 안내</a></li>
 				</ul>
 			</li>
 			<li class="item">
@@ -52,7 +47,7 @@
 				<ul class="sub_menu">
 					<li><a href="${hpath }/NotiList.do">공지사항</a></li>
 					<li><a href="">자료실</a></li>
-					<li><a href="">묻고답하기</a></li>
+					<li><a href="${hpath }/GetQnaList.do">묻고답하기</a></li>
 				</ul>
 			</li>
 		</ul>
