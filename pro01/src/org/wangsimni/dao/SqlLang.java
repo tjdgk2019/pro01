@@ -19,12 +19,12 @@ public interface SqlLang {
 	String UPD_MEMBER = "update member set pw=?, name=?, email=?, tel=? where id=?";
 	String DEL_MEMBER = "delete from member where id=?";
 	
-	String DEL_ANSWER = null;
-	String DEL_QUESTION = null;
-	String UPD_QNA = null;
-	String VISITED_UPD_QNA = null;
-	String SELECT_QNA_BYNO = null;
-	String SELECT_ALL_QNA = null;
+	String SELECT_ALL_QNA = "select * from qna order by parno desc, plevel asc";
+	String SELECT_QNA_BYNO = "select * from qna where no=?";
+	String DEL_ANSWER = "delete from qna where no=?";
+	String DEL_QUESTION = "delete from qna where parno=?";
+	String UPD_QNA = "update qna set title=?, content=? where no=?";
+	String VISITED_UPD_QNA = "update qna set visited=visited+1 where no=?";
 	
 	Connection con = null;
 	void close(Connection con, PreparedStatement pstmt);

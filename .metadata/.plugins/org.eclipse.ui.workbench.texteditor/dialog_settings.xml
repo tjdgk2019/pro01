@@ -8,11 +8,15 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Aid"/>
+			<item value="aid"/>
 			<item value="strong"/>
 			<item value="가산동"/>
 			<item value="page"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Qid"/>
+			<item value="qid"/>
 			<item value="왕십리"/>
 		</list>
 	</section>

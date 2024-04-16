@@ -10,12 +10,11 @@
 <title>${title }</title>
 <%@ include file="/head.jsp" %>
 <style>
-	.container{width:1400px}
-	.page{clear:both; height:100vh; text-align: center;}
-	.table{margin:0 auto; text-align: center;}
-	.title {text-align: center; font-size:40px; padding-top:2em;}
-	.page_title{text-align: center; font-size:34px; padding-top:2em; padding-bottom:1.5em;}
-	#page2{background-color:#f8f8f8;}
+	.container{ width:1400px}
+	.page { clear:both; height:100vh; text-align: center;}
+	.table { margin:0 auto; text-align: center;}
+	.title { text-align: center; font-size:40px; padding-top:2em;}
+	.page_title { text-align: center; font-size:34px; padding-top:2em; padding-bottom:1.5em;}
 </style>
 </head>
 <body>
@@ -68,11 +67,6 @@
 			</div>
 		</div>
 </section>
-<section class="page" id="page2">
-		<div style="width:1400px; margin:0 auto;">
-			<h2 class="title">Content</h2>
-		</div>
-	</section>	
 </div>
 <div id="footer">
 	<%@ include file="/footer.jsp" %>

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.wangsimni.dto.Data;
 import org.wangsimni.dto.Notice;
-import org.wangsimni.dto.QnA;
+import org.wangsimni.dto.Qna;
 
 
 @WebServlet("/pro01")
@@ -34,7 +34,7 @@ public class Main extends HttpServlet {
 		application.setAttribute("title", "왕십리 소개");
 		
 		List <Notice> latestNotiList = new ArrayList<>();
-		List <QnA> latestQnAList = new ArrayList<>();
+		List <Qna> latestQnAList = new ArrayList<>();
 		List <Data> latestDataList = new ArrayList<>();
 		
 		request.setAttribute("latestNotiList", latestNotiList);

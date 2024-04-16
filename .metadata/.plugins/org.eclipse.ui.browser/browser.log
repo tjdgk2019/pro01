@@ -16,3 +16,6 @@
 4월 04, 2024 19:19:28.76 [4068:9708:0404/191928.768:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
 4월 04, 2024 19:20:10.37 WARNING: Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#56 is a dynamic-sized tensor).
 4월 04, 2024 19:34:24.53 [4068:9708:0404/193424.533:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+4월 16, 2024 09:06:05.29 NEW SESSION
+4월 16, 2024 09:06:05.29 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

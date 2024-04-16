@@ -19,7 +19,6 @@
 	th.item1 {width:25%;}
 	th.item2 {width:50%;}
 	th.item3 {width:25%;}
-	#page2{background-color:#f8f8f8;}
 </style>
 </head>
 <body>
@@ -70,11 +69,6 @@
 			</div>
 		</div>
 	</section>
-	<section class="page" id="page2">
-		<div style="width:1400px; margin:0 auto;">
-			<h2 class="title">Content</h2>
-		</div>
-	</section>	
 </div>
 <div id="footer">
 	<%@ include file="/footer.jsp" %>

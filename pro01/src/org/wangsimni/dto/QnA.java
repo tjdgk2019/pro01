@@ -1,6 +1,6 @@
 package org.wangsimni.dto;
 
-public class QnA {
+public class Qna {
 	private int no;
 	private int plevel;
 	private int parno;
@@ -8,13 +8,13 @@ public class QnA {
 	private String content;
 	private String resdate;
 	private int visited;
-	private String qid;
+	private String aid;
 	
-	public QnA() {
+	public Qna() {
 		
 	}
 
-	public QnA(int no, int plevel, int parno, String title, String content, String resdate, int visited, String qid) {
+	public Qna(int no, int plevel, int parno, String title, String content, String resdate, int visited, String aid) {
 		super();
 		this.no = no;
 		this.plevel = plevel;
@@ -23,7 +23,7 @@ public class QnA {
 		this.content = content;
 		this.resdate = resdate;
 		this.visited = visited;
-		this.qid = qid;
+		this.aid = aid;
 	}
 
 	public int getNo() {
@@ -82,17 +82,18 @@ public class QnA {
 		this.visited = visited;
 	}
 
-	public String getQid() {
-		return qid;
+	public String getAid() {
+		return aid;
 	}
 
-	public void setQid(String qid) {
-		this.qid = qid;
+	public void setAid(String aid) {
+		this.aid = aid;
 	}
 
 	@Override
 	public String toString() {
-		return "QnA [no=" + no + ", plevel=" + plevel + ", parno=" + parno + ", title=" + title + ", content=" + content
-				+ ", resdate=" + resdate + ", visited=" + visited + ", qid=" + qid + "]";
+		return "Qna [no=" + no + ", plevel=" + plevel + ", parno=" + parno + ", title=" + title + ", content=" + content
+				+ ", resdate=" + resdate + ", visited=" + visited + ", aid=" + aid + "]";
 	}
 }
+	

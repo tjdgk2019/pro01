@@ -15,7 +15,6 @@
 	.table{margin:0 auto; text-align: center;}
 	.title {text-align: center; font-size:40px; padding-top:2em;}
 	.page_title{text-align: center; font-size:34px; padding-top:2em; padding-bottom:1.5em;}
-	#page2{background-color:#f8f8f8;}
 </style>
 </head>
 <body>

@@ -13,7 +13,7 @@
 .container { width:1400px; }
 .page { clear:both; min-height:100vh; margin:0; padding:0; }
 .page_title { font-size:36px; padding-top:2em; text-align:center; }
-.img { width:540px; display:block; margin:0 auto;}
+.img { width:600px; display:block; margin:0 auto;}
 </style>
 </head>
 <body>

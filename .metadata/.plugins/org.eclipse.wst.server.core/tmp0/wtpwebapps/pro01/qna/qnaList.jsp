@@ -10,13 +10,11 @@
 <meta charset="UTF-8">
 <title>${title }</title>
 <%@ include file="/head.jsp" %>
-<script src="${path0 }/js/jquery.dataTables.js"></script>
-<link rel="stylesheet" href="${path0 }/css/jquery.dataTables.css" >
+<!--<script src="${path0 }/js/jquery.dataTables.js"></script>-->
+<!--<link rel="stylesheet" href="${path0 }/css/jquery.dataTables.css" >-->
 <style>
 .container { width:1400px; }
 .page { clear:both; height:100vh; }
-#page1 { background-color:#ececec; }
-#page2 { background-color:#42bcf5; }
 .page_title { font-size:36px; padding-top:2em; text-align:center; }
 th.item1 { width:8%; }
 th.item2 { width:50%; }
@@ -30,16 +28,13 @@ th.item4 { width:15%; }
 </div>
 <div id="contents">
 	<section class="page" id="page1">
-		<div style="width:1400px; margin:0 auto;">
 			<nav aria-label="breadcrumb" style="text-align:right">
 			  <ol class="breadcrumb">
-			    <li class="breadcrumb-item"><a href="#">Home</a></li>
+			    <li class="breadcrumb-item"><a href="/pro01">Home</a></li>
 			    <li class="breadcrumb-item"><a href="${path0 }/GetQnaList.do">질문 및 답변</a></li>
 			    <li class="breadcrumb-item active" aria-current="page">질문 및 답변 목록</li>
 			  </ol>
 			</nav>
-			<hr>
-		</div>
 		<div style="width:1400px; margin:0 auto;">
 			<h3 class="page_title">질문 및 답변</h3>
 			<div>
@@ -91,19 +86,10 @@ th.item4 { width:15%; }
 						</c:if>
 					</tbody>
 				</table>
-				<script>
-				$(document).ready(function(){
-					$("#tb1").DataTable({
-						order:[[0,"desc"]]
-					});
-				});
-				</script>
-				<hr>
-				<c:if test="${not empty sid }">
-				<div class="btn-group">
-				  <a href="${path0 }/qna/qIns.jsp" class="btn btn-secondary">질문 등록</a>
+				<br>
+				<div>
+				  <a href="${path0 }/qna/qIns.jsp" class="btn btn-outline-dark">질문 등록</a>
 				</div>
-				</c:if>
 			</div>
 		</div>
 	</section>	
