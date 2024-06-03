@@ -14,6 +14,7 @@
 	.page{clear:both; height:100vh; }
 	#page2{background-color:#f4f4f4; }
 	.page_title{font-size:36px; padding-top:2em; text-align:center; }
+	.btn-group { padding-bottom:2em; }
 </style>
 </head>
 <body>
@@ -25,7 +26,7 @@
 		<c:if test="${not empty msg}">
 		<div style="width:1400px; margin:0 auto; color:red; padding-top:32px; text-align:center">${msg }</div>
 		</c:if>
-		<div style="width:1400px; margin:0 auto; text-align:left">
+		<div style="width:1400px; margin:0 auto;">
 			<h3 class="page_title"><i class="fas fa-user-plus fa-fw"></i> 회원가입</h3>
 			<form action="${path0 }/EditMemberPro.do" method="post" onsubmit="return editCheck(this)">
 				<table class="table">
@@ -64,6 +65,14 @@
 							<th><label for="tel">전화번호</label></th>
 							<td>
 								<input type="tel" name="tel" id="tel" class="form-control" value="${mem.tel }" required>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="tel">주소</label></th>
+							<td>
+								<input type="text" name="address1" id="address1" class="form-control" value="${address[0] }" readonly><br>
+								<input type="text" name="address2" id="address2" class="form-control" value="${address[1] }" readonly><br>
+								<input type="text" name="postcode" id="postcode" placeholder="우편번호 입력" class="form-control" value="${mem.postcode }" style="width:160px" readonly><br>
 							</td>
 						</tr>
 					</tbody>

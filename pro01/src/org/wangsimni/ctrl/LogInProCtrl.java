@@ -2,7 +2,6 @@ package org.wangsimni.ctrl;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import org.wangsimni.dao.MemberDAO;
 import org.wangsimni.dto.Member;
+import org.wangsimni.util.AES256;
 
 @WebServlet("/LogInPro.do")
 public class LogInProCtrl extends HttpServlet {
@@ -36,6 +36,14 @@ public class LogInProCtrl extends HttpServlet {
 		HttpSession session = request.getSession();
 		PrintWriter out = response.getWriter();
 		RequestDispatcher view;
+		
+		String key = "%02x";
+		
+		try {
+			mem.setPw(AES256.decryptAES256(mem.getPw(), key));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		if(id.equals(mem.getId()) && pw.equals(mem.getPw())) { //로그인 처리 대상
 			session.setAttribute("sid", mem.getId());

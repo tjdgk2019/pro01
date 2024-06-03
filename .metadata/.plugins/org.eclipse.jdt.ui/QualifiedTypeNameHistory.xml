@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="org.wangsimni.dto.Notice"/>
     <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.Class.Member"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -21,4 +20,15 @@
     <fullyQualifiedTypeName name="org.wangsimni.dto.Member"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sun.crypto.provider.AESWrapCipher.AES256"/>
+    <fullyQualifiedTypeName name="java.security.MessageDigest"/>
+    <fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+    <fullyQualifiedTypeName name="java.security.SecureRandom"/>
+    <fullyQualifiedTypeName name="javax.crypto.SecretKeyFactory"/>
+    <fullyQualifiedTypeName name="javax.crypto.spec.PBEKeySpec"/>
+    <fullyQualifiedTypeName name="java.security.AlgorithmParameters"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.util.Base64"/>
+    <fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="org.wangsimni.util.AES256"/>
 </qualifiedTypeNameHistroy>
